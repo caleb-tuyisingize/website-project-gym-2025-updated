@@ -1,4 +1,56 @@
-<div>
-    <h1 class="text-7xl">Hero</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quibusdam.</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Polygon Layout</title>
+  <link href="./src/output.css" rel="stylesheet">
+  
+    <style>
+    .clip-green {
+      clip-path: polygon(60% 0%, 85% 8%, 100% 35%, 80% 90%, 50% 95%, 20% 85%, 10% 45%, 25% 15%);
+    }
+    .clip-yellow {
+      clip-path: polygon(60% 0%, 85% 15%, 65% 35%, 40% 30%, 35% 10%);
+    }
+  </style>
+</head>
+
+<body class="bg-gray-50 min-h-screen flex items-center justify-center">
+  <main class="w-full max-w-6xl px-8 py-16">
+    <div class="grid md:grid-cols-2 gap-16 items-start relative">
+
+    
+      <div class="space-y-6 text-xl font-semibold text-gray-900">
+        <div>Brand strategy</div>
+        <div>Corporate Identity & Website development</div>
+        <div>SEO & copywriting</div>
+        <div>Media Relations</div>
+        <div>Digital marketing & content production</div>
+        <div>Influencer relations</div>
+      </div>
+
+      
+      <div class="relative flex justify-end items-start">
+        <!-- Small yellow polygon -->
+        <div class="absolute -top-12 left-1/3 w-2 h-20 bg-yellow-400 clip-yellow p-20"></div>
+
+        <!-- Large green polygon -->
+       <div class="relative w-96 h-[420px]">
+  <div class="absolute inset-0 bg-emerald-700 clip-green p-8 text-white text-sm leading-relaxed 
+              flex items-center justify-center text-center">
+    Our strategic approach is a collaborative journey that starts with analysing 
+    the initial situation and leads to messages that cut through the information 
+    overload. We take care of content production and maintain relationships 
+    with multipliers to position your brand in the best possible way. 
+    From analysis to implementation, we accompany you every step of the way, 
+    ensuring that every measure is effective.
+  </div>
 </div>
+
+      </div>
+
+    </div>
+  </main>
+</body>
+</html>
