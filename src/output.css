@@ -15,15 +15,22 @@
     --color-yellow-600: oklch(68.1% 0.162 75.834);
     --color-green-500: oklch(72.3% 0.219 149.579);
     --color-green-700: oklch(52.7% 0.154 150.069);
+<<<<<<< HEAD
     --color-green-900: oklch(39.3% 0.095 152.535);
     --color-blue-700: oklch(48.8% 0.243 264.376);
     --color-blue-800: oklch(42.4% 0.199 265.638);
+=======
+    --color-blue-700: oklch(48.8% 0.243 264.376);
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
     --color-pink-400: oklch(71.8% 0.202 349.761);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-100: oklch(96.7% 0.003 264.542);
     --color-gray-200: oklch(92.8% 0.006 264.531);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+<<<<<<< HEAD
     --color-gray-800: oklch(27.8% 0.033 256.848);
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
     --color-white: #fff;
     --spacing: 0.25rem;
     --container-md: 28rem;
@@ -628,18 +635,24 @@
   .flex {
     display: flex;
   }
+<<<<<<< HEAD
   .hidden {
     display: none;
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .table {
     display: table;
   }
   .h-2 {
     height: calc(var(--spacing) * 2);
   }
+<<<<<<< HEAD
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -775,9 +788,12 @@
   .min-h-screen {
     min-height: 100vh;
   }
+<<<<<<< HEAD
   .w-12 {
     width: calc(var(--spacing) * 12);
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .w-20 {
     width: calc(var(--spacing) * 20);
   }
@@ -942,15 +958,19 @@
   .items-end {
     align-items: flex-end;
   }
+<<<<<<< HEAD
   .justify-between {
     justify-content: space-between;
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .justify-center {
     justify-content: center;
   }
   .justify-end {
     justify-content: flex-end;
   }
+<<<<<<< HEAD
   .space-y-1 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -958,6 +978,8 @@
       margin-block-end: calc(calc(var(--spacing) * 1) * calc(1 - var(--tw-space-y-reverse)));
     }
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .overflow-auto {
     overflow: auto;
   }
@@ -1002,21 +1024,27 @@
   .bg-pink-400 {
     background-color: var(--color-pink-400);
   }
+<<<<<<< HEAD
   .bg-transparent {
     background-color: transparent;
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .bg-white {
     background-color: var(--color-white);
   }
   .p-8 {
     padding: calc(var(--spacing) * 8);
   }
+<<<<<<< HEAD
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
   .py-1 {
     padding-block: calc(var(--spacing) * 1);
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   .py-4 {
     padding-block: calc(var(--spacing) * 4);
   }
@@ -1068,8 +1096,13 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+<<<<<<< HEAD
   .text-blue-800 {
     color: var(--color-blue-800);
+=======
+  .text-gray-500 {
+    color: var(--color-gray-500);
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
   }
   .text-gray-500 {
     color: var(--color-gray-500);
@@ -1114,6 +1147,7 @@
   .\[clip-path\:polygon\(46\%_10\%\,_58\%_24\%\,_25\%_85\%\,_8\%_84\%\,_1\%_71\%\,_23\%_15\%\)\] {
     clip-path: polygon(46% 10%, 58% 24%, 25% 85%, 8% 84%, 1% 71%, 23% 15%);
   }
+<<<<<<< HEAD
   .max-md\:absolute {
     @media (width < 48rem) {
       position: absolute;
@@ -1170,6 +1204,8 @@
       display: none;
     }
   }
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
 }
 @property --tw-translate-x {
   syntax: "*";
@@ -1220,11 +1256,14 @@
 @property --tw-skew-y {
   syntax: "*";
   inherits: false;
+<<<<<<< HEAD
 }
 @property --tw-space-y-reverse {
   syntax: "*";
   inherits: false;
   initial-value: 0;
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
 }
 @property --tw-border-style {
   syntax: "*";
@@ -1258,7 +1297,10 @@
       --tw-rotate-z: initial;
       --tw-skew-x: initial;
       --tw-skew-y: initial;
+<<<<<<< HEAD
       --tw-space-y-reverse: 0;
+=======
+>>>>>>> 271fac3ada4c7167b68231ddcad0dce2a7439b89
       --tw-border-style: solid;
       --tw-leading: initial;
       --tw-font-weight: initial;
