@@ -271,7 +271,10 @@
 
   .inset-0 {
     inset: calc(var(--spacing) * 0);
-
+  }
+   .clip-green {
+    clip-path: polygon(10% 5%, 85% 0%, 100% 25%, 95% 100%, 15% 95%, 0% 30%);
+  }
   .-top-1 {
     top: calc(var(--spacing) * -1);
   }
