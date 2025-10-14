@@ -278,6 +278,12 @@
    .clip-green {
     clip-path: polygon(10% 5%, 85% 0%, 100% 25%, 95% 100%, 15% 95%, 0% 30%);
   }
+  .clip-test{
+    clip-path: polygon(43% 4%, 69% 0, 96% 18%, 97% 74%, 62% 98%, 25% 91%, 20% 24%);
+  }
+  .hexagon{
+   clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
+  }
   .-top-1 {
     top: calc(var(--spacing) * -1);
   }
