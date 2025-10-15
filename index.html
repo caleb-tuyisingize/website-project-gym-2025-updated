@@ -16,13 +16,13 @@
 
     
 
-    <div  id="navbar" class="sticky top-0 bg-transparent z-100"></div>
+    <div  id="navbar" class="sticky top-0 bg-transparent z-100 max-lg:mb-60"></div>
     <div class="text-red-900" id="header"></div>
-    <div class="text-red-900" id="hero"></div>
+    <div  id="hero"></div>
+    <div id="services"></div>
     <div id="contact"></div>
     <div id="footer"></div>
     <script defer src="/src/js/nav.js"></script>
-    <script defer src="/src/js/stickyBanner.js"></script>
     <script>
         const loadComponents = (id, url) =>  {
             return fetch(url)
@@ -41,6 +41,7 @@
             // load the rest (can be async)
             loadComponents('header', 'src/sections/header.html');
             loadComponents('hero', 'src/sections/hero.html');
+            loadComponents('services', 'src/sections/service.html');
             loadComponents('contact', 'src/sections/contact.html');
             loadComponents('footer', 'src/sections/footer.html');
         }
