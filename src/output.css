@@ -233,6 +233,12 @@
   .clip-test{
     clip-path: polygon(43% 4%, 69% 0, 96% 18%, 97% 74%, 62% 98%, 25% 91%, 20% 24%);
   }
+  .square-hexagon{
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 20% 91%, 0 90%);
+  }
+  .polygon-red{
+    clip-path: polygon(6% 23%, 72% 20%, 100% 50%, 77% 85%, 20% 80%, 0% 50%);
+  }
   .hexagon{
    clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
   }
