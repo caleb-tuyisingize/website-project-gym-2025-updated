@@ -14,7 +14,7 @@ function initNav() {
     const ci = document.getElementById('close-icon');
 
     mi.addEventListener('click', () => {
-        menu.classList.toggle('max-lg:hidden');
+        menu.classList.toggle('max-xl:hidden');
         mi.classList.toggle('hidden');
         ci.classList.toggle('hidden');
         console.log('menu opened');
@@ -22,7 +22,7 @@ function initNav() {
 
     // close and open the menu on the small screen
     ci.addEventListener('click', () => {
-        menu.classList.toggle('max-lg:hidden');
+        menu.classList.toggle('max-xl:hidden');
         mi.classList.toggle('hidden');
         ci.classList.toggle('hidden');
         console.log('menu closed');
