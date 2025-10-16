@@ -31,6 +31,3 @@ function initNav() {
 
 // expose globally so index.html can call it after injection
 window.initNav = initNav;
-
-
-
