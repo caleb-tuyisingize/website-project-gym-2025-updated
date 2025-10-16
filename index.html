@@ -12,13 +12,14 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
-<body class="overflow-x-hidden bg-[#EEECEB]">
+<body class="overflow-x-hidden bg-[rgba(239,236,234,1)]">
 
     
 
-    <div  id="navbar" class="sticky top-0 bg-transparent z-100 max-lg:mb-60"></div>
+    <div  id="navbar" class="sticky top-0 bg-transparent z-100 max-xl:mb-50"></div>
     <div class="text-red-900" id="header"></div>
     <div  id="hero"></div>
+    <div id="shape" class="sticky -top-4"></div>
     <div id="services"></div>
     <div id="contact"></div>
     <div id="footer"></div>
@@ -42,6 +43,7 @@
             loadComponents('header', 'src/sections/header.html');
             loadComponents('hero', 'src/sections/hero.html');
             loadComponents('services', 'src/sections/service.html');
+            loadComponents('shape', 'src/sections/shape.html');
             loadComponents('contact', 'src/sections/contact.html');
             loadComponents('footer', 'src/sections/footer.html');
         }
