@@ -1,34 +1,54 @@
 @import "tailwindcss";
 
-@layer base{
+@layer base {
 
-  html{
+  html {
     scroll-behavior: smooth;
   }
-  body{
-      font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
   }
 }
 
-@layer utilities{
+@layer utilities {
 
 
 
-      .clip-green {
+  .clip-green {
     clip-path: polygon(10% 5%, 85% 0%, 100% 25%, 95% 100%, 15% 95%, 0% 30%);
   }
-  .clip-test{
+
+  .clip-test {
     clip-path: polygon(43% 4%, 69% 0, 96% 18%, 97% 74%, 62% 98%, 25% 91%, 20% 24%);
   }
-  .square-hexagon{
+
+  .square-hexagon {
     clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 20% 91%, 0 90%);
   }
-  .polygon-red{
+
+  .polygon-red {
     clip-path: polygon(9% 26%, 68% 21%, 97% 52%, 77% 82%, 17% 78%, 0 52%);
   }
-  .hexagon{
-   clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
+
+  .hexagon {
+    clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
   }
+
+  /* In your global.css or tailwind.css */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
 }
