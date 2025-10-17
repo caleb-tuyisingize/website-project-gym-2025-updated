@@ -933,6 +933,12 @@
       padding-inline: calc(var(--spacing) * 15);
     }
   }
+  .max-xl\:text-2xl {
+    @media (width < 80rem) {
+      font-size: var(--text-2xl);
+      line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
   .max-xl\:font-bold {
     @media (width < 80rem) {
       --tw-font-weight: var(--font-weight-bold);
@@ -1385,6 +1391,16 @@
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
+  }
+}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
   }
 }
 @layer utilities {
