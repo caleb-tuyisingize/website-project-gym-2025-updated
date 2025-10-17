@@ -309,6 +309,9 @@
   .mt-\[-3rem\] {
     margin-top: -3rem;
   }
+  .mt-\[-12rem\] {
+    margin-top: -12rem;
+  }
   .mt-\[-14rem\] {
     margin-top: -14rem;
   }
@@ -317,6 +320,9 @@
   }
   .mt-\[-22rem\] {
     margin-top: -22rem;
+  }
+  .mt-\[-42rem\] {
+    margin-top: -42rem;
   }
   .mr-32 {
     margin-right: calc(var(--spacing) * 32);
@@ -930,14 +936,34 @@
       margin-top: -3rem;
     }
   }
+  .lg\:mt-\[-5rem\] {
+    @media (width >= 64rem) {
+      margin-top: -5rem;
+    }
+  }
+  .lg\:mt-\[-8rem\] {
+    @media (width >= 64rem) {
+      margin-top: -8rem;
+    }
+  }
   .lg\:mt-\[-12rem\] {
     @media (width >= 64rem) {
       margin-top: -12rem;
     }
   }
+  .lg\:mt-\[-\] {
+    @media (width >= 64rem) {
+      margin-top: -;
+    }
+  }
   .lg\:mt-\[4rem\] {
     @media (width >= 64rem) {
       margin-top: 4rem;
+    }
+  }
+  .lg\:mt-auto {
+    @media (width >= 64rem) {
+      margin-top: auto;
     }
   }
   .lg\:h-34 {
