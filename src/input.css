@@ -50,5 +50,13 @@
     scrollbar-width: none;
     /* Firefox */
   }
+  .font-outfit {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  }
+  *{
+    font-family: 'Outfit', sans-serif;
+  }
 
 }
