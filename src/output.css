@@ -719,8 +719,14 @@
     --tw-font-weight: var(--font-weight-semibold);
     font-weight: var(--font-weight-semibold);
   }
+  .text-\[http\:\/\/127\.0\.0\.1\:5502\/src\/contact\.html\] {
+    color: //127.0.0.1:5502/src/contact.html;
+  }
   .text-\[rgba\(0\,103\,46\,1\)\] {
     color: rgba(0,103,46,1);
+  }
+  .text-\[text-\[rgba\(0\,103\,46\,1\)\]\] {
+    color: text-[rgba(0,103,46,1)];
   }
   .text-black {
     color: var(--color-black);
@@ -885,6 +891,11 @@
       translate: var(--tw-translate-x) var(--tw-translate-y);
     }
   }
+  .max-md\:hidden {
+    @media (width < 48rem) {
+      display: none;
+    }
+  }
   .max-md\:w-\[350px\] {
     @media (width < 48rem) {
       width: 350px;
@@ -911,9 +922,39 @@
       flex-direction: column;
     }
   }
+  .max-md\:gap-y-0 {
+    @media (width < 48rem) {
+      row-gap: calc(var(--spacing) * 0);
+    }
+  }
+  .max-md\:gap-y-1 {
+    @media (width < 48rem) {
+      row-gap: calc(var(--spacing) * 1);
+    }
+  }
   .max-md\:gap-y-6 {
     @media (width < 48rem) {
       row-gap: calc(var(--spacing) * 6);
+    }
+  }
+  .max-md\:gap-y-10 {
+    @media (width < 48rem) {
+      row-gap: calc(var(--spacing) * 10);
+    }
+  }
+  .max-md\:gap-y-15 {
+    @media (width < 48rem) {
+      row-gap: calc(var(--spacing) * 15);
+    }
+  }
+  .max-md\:gap-y-20 {
+    @media (width < 48rem) {
+      row-gap: calc(var(--spacing) * 20);
+    }
+  }
+  .max-md\:gap-y-100 {
+    @media (width < 48rem) {
+      row-gap: calc(var(--spacing) * 100);
     }
   }
   .max-md\:text-sm {
