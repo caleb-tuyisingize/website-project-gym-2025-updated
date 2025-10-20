@@ -37,7 +37,9 @@
   .hexagon {
     clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
   }
-
+  .close-polygon {
+    clip-path: polygon(4% 30%, 79% 26%, 100% 50%, 82% 76%, 15% 70%, 0% 50%);
+  }
   /* In your global.css or tailwind.css */
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
