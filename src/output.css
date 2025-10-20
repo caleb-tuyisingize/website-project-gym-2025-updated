@@ -14,6 +14,7 @@
     --color-pink-400: oklch(71.8% 0.202 349.761);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-500: oklch(55.1% 0.027 264.364);
+    --color-gray-950: oklch(13% 0.028 261.692);
     --color-black: #000;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -36,6 +37,8 @@
     --text-3xl--line-height: calc(2.25 / 1.875);
     --text-4xl: 2.25rem;
     --text-4xl--line-height: calc(2.5 / 2.25);
+    --text-7xl: 4.5rem;
+    --text-7xl--line-height: 1;
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --font-weight-bold: 700;
@@ -241,11 +244,35 @@
   .left-1\/3 {
     left: calc(1/3 * 100%);
   }
+  .-z-50 {
+    z-index: calc(50 * -1);
+  }
+  .z-1 {
+    z-index: 1;
+  }
+  .z-10 {
+    z-index: 10;
+  }
+  .z-50 {
+    z-index: 50;
+  }
+  .z-80 {
+    z-index: 80;
+  }
   .z-99 {
     z-index: 99;
   }
   .z-100 {
     z-index: 100;
+  }
+  .z-\[-12\] {
+    z-index: -12;
+  }
+  .z-\[-\] {
+    z-index: -;
+  }
+  .z-\[1\] {
+    z-index: 1;
   }
   .mx-\[-5rem\] {
     margin-inline: -5rem;
@@ -289,11 +316,16 @@
   .mt-\[-14rem\] {
     margin-top: -14rem;
   }
+  .mt-\[-20rem\] {
+    margin-top: -20rem;
+  }
   .mt-\[-22rem\] {
     margin-top: -22rem;
   }
   .mt-\[4rem\] {
     margin-top: 4rem;
+  .mt-\[-42rem\] {
+    margin-top: -42rem;
   }
   .mr-32 {
     margin-right: calc(var(--spacing) * 32);
@@ -518,6 +550,9 @@
   .bg-gray-50 {
     background-color: var(--color-gray-50);
   }
+  .bg-gray-950 {
+    background-color: var(--color-gray-950);
+  }
   .bg-pink-400 {
     background-color: var(--color-pink-400);
   }
@@ -568,6 +603,10 @@
     font-size: var(--text-4xl);
     line-height: var(--tw-leading, var(--text-4xl--line-height));
   }
+  .text-7xl {
+    font-size: var(--text-7xl);
+    line-height: var(--tw-leading, var(--text-7xl--line-height));
+  }
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
@@ -579,9 +618,6 @@
   .text-xl {
     font-size: var(--text-xl);
     line-height: var(--tw-leading, var(--text-xl--line-height));
-  }
-  .text-\[2rem\] {
-    font-size: 2rem;
   }
   .text-\[18px\] {
     font-size: 18px;
@@ -813,6 +849,11 @@
       width: calc(var(--spacing) * 60);
     }
   }
+  .sm\:w-160 {
+    @media (width >= 40rem) {
+      width: calc(var(--spacing) * 160);
+    }
+  }
   .sm\:space-y-4 {
     @media (width >= 40rem) {
       :where(& > :not(:last-child)) {
@@ -879,9 +920,34 @@
       margin-top: -3rem;
     }
   }
+  .lg\:mt-\[-5rem\] {
+    @media (width >= 64rem) {
+      margin-top: -5rem;
+    }
+  }
+  .lg\:mt-\[-8rem\] {
+    @media (width >= 64rem) {
+      margin-top: -8rem;
+    }
+  }
+  .lg\:mt-\[-12rem\] {
+    @media (width >= 64rem) {
+      margin-top: -12rem;
+    }
+  }
+  .lg\:mt-\[-\] {
+    @media (width >= 64rem) {
+      margin-top: -;
+    }
+  }
   .lg\:mt-\[4rem\] {
     @media (width >= 64rem) {
       margin-top: 4rem;
+    }
+  }
+  .lg\:mt-auto {
+    @media (width >= 64rem) {
+      margin-top: auto;
     }
   }
   .lg\:h-34 {
@@ -936,6 +1002,11 @@
       gap: calc(var(--spacing) * 24);
     }
   }
+  .lg\:text-\[2rem\] {
+    @media (width >= 64rem) {
+      font-size: 2rem;
+    }
+  }
   .xl\:hidden {
     @media (width >= 80rem) {
       display: none;
@@ -957,6 +1028,16 @@
     }
   }
 }
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
 @layer utilities {
   .clip-green {
     clip-path: polygon(10% 5%, 85% 0%, 100% 25%, 95% 100%, 15% 95%, 0% 30%);
@@ -972,6 +1053,13 @@
   }
   .hexagon {
     clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
   }
 }
 @property --tw-translate-x {
