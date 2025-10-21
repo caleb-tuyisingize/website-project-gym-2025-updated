@@ -1,5 +1,17 @@
 @import "tailwindcss";
 
+@theme{
+  --font-outfit: 'Outfit';
+  --color-primary: #000000;
+  --color-bg-primary:#EFECEA;
+  --color-shape-green:#00672E;
+  --color-shape-yellow:#FFE800;
+  --color-shape-red:#E31C24;
+  --color-shape-pink:#FF93C8;
+  --color-shape-blue:#0F2CCE;
+}
+
+
 @layer base {
 
   html {
