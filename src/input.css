@@ -40,6 +40,24 @@
   .close-polygon {
     clip-path: polygon(4% 30%, 79% 26%, 100% 50%, 82% 76%, 15% 70%, 0% 50%);
   }
+  .pink-shape{
+    clip-path:polygon(73% 2%, 100% 76%, 71% 100%, 41% 10%, 61% 0)
+  }
+  .yellow-shape{
+    clip-path:polygon(34% 3%, 84% 0, 97% 42%, 43% 100%, 0 98%, 0 83%, 3% 68%);
+  }
+  .red-shape{
+    clip-path:polygon(2% 5%, 71% 0, 100% 39%, 78% 70%, 26% 66%, 0 37%);
+  }
+  .green-shape{
+    clip-path:polygon(17% 0, 56% 9%, 96% 60%, 75% 97%, 33% 100%, 0 40%);
+  }
+  .blue-shape{
+    clip-path:polygon(49% 2%, 90% 0, 100% 40%, 80% 99%, 35% 99%, 0 60%, 33% 7%);
+  }
+  .green-hexagon{
+   clip-path:polygon(76% 0, 100% 26%, 100% 100%, 68% 100%, 36% 83%, 25% 46%, 40% 13%);
+  }
   /* In your global.css or tailwind.css */
   .scrollbar-hide::-webkit-scrollbar {
     display: none;
