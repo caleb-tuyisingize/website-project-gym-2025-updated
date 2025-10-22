@@ -7,13 +7,9 @@
       "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-300: oklch(80.8% 0.114 19.571);
     --color-red-500: oklch(63.7% 0.237 25.331);
-    --color-red-600: oklch(57.7% 0.245 27.325);
     --color-amber-50: oklch(98.7% 0.022 95.277);
-    --color-amber-400: oklch(82.8% 0.189 84.429);
     --color-amber-500: oklch(76.9% 0.188 70.08);
-    --color-amber-600: oklch(66.6% 0.179 58.318);
     --color-amber-800: oklch(47.3% 0.137 46.201);
     --color-yellow-300: oklch(90.5% 0.182 98.111);
     --color-green-800: oklch(44.8% 0.119 151.328);
@@ -21,7 +17,6 @@
     --color-blue-800: oklch(42.4% 0.199 265.638);
     --color-pink-300: oklch(82.3% 0.12 346.018);
     --color-pink-400: oklch(71.8% 0.202 349.761);
-    --color-pink-500: oklch(65.6% 0.241 354.308);
     --color-gray-50: oklch(98.5% 0.002 247.839);
     --color-gray-500: oklch(55.1% 0.027 264.364);
     --color-black: #000;
@@ -30,9 +25,7 @@
     --container-sm: 24rem;
     --container-md: 28rem;
     --container-lg: 32rem;
-    --container-xl: 36rem;
     --container-2xl: 42rem;
-    --container-3xl: 48rem;
     --container-4xl: 56rem;
     --container-5xl: 64rem;
     --container-6xl: 72rem;
@@ -64,8 +57,10 @@
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --font-outfit: 'Outfit';
+    --color-text-green: #00672e;
     --color-primary: #000000;
     --color-bg-primary: #EFECEA;
+    --color-shape-green: #00672E;
     --color-shape-yellow: #FFE800;
     --color-shape-red: #E31C24;
   }
@@ -297,15 +292,6 @@
   .-mt-20 {
     margin-top: calc(var(--spacing) * -20);
   }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
-  }
-  .mt-8 {
-    margin-top: calc(var(--spacing) * 8);
-  }
-  .mt-10 {
-    margin-top: calc(var(--spacing) * 10);
-  }
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
@@ -318,14 +304,8 @@
   .mb-5 {
     margin-bottom: calc(var(--spacing) * 5);
   }
-  .mb-7 {
-    margin-bottom: calc(var(--spacing) * 7);
-  }
-  .mb-10 {
-    margin-bottom: calc(var(--spacing) * 10);
-  }
-  .mb-15 {
-    margin-bottom: calc(var(--spacing) * 15);
+  .mb-\[25px\] {
+    margin-bottom: 25px;
   }
   .flex {
     display: flex;
@@ -341,9 +321,6 @@
   }
   .h-20 {
     height: calc(var(--spacing) * 20);
-  }
-  .h-32 {
-    height: calc(var(--spacing) * 32);
   }
   .h-\[18\.125rem\] {
     height: 18.125rem;
@@ -423,9 +400,6 @@
   .w-\[208px\] {
     width: 208px;
   }
-  .w-\[508px\] {
-    width: 508px;
-  }
   .w-\[590px\] {
     width: 590px;
   }
@@ -434,9 +408,6 @@
   }
   .w-md {
     width: var(--container-md);
-  }
-  .max-w-3xl {
-    max-width: var(--container-3xl);
   }
   .max-w-4xl {
     max-width: var(--container-4xl);
@@ -468,16 +439,8 @@
   .border-collapse {
     border-collapse: collapse;
   }
-  .-translate-x-10 {
-    --tw-translate-x: calc(var(--spacing) * -10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
   .translate-x-10 {
     --tw-translate-x: calc(var(--spacing) * 10);
-    translate: var(--tw-translate-x) var(--tw-translate-y);
-  }
-  .-translate-y-5 {
-    --tw-translate-y: calc(var(--spacing) * -5);
     translate: var(--tw-translate-x) var(--tw-translate-y);
   }
   .-translate-y-15 {
@@ -562,6 +525,9 @@
   .bg-\[rgba\(239\,236\,234\,1\)\] {
     background-color: rgba(239,236,234,1);
   }
+  .bg-amber-800 {
+    background-color: var(--color-amber-800);
+  }
   .bg-bg-primary {
     background-color: var(--color-bg-primary);
   }
@@ -576,9 +542,6 @@
   }
   .bg-red-500 {
     background-color: var(--color-red-500);
-  }
-  .bg-red-600 {
-    background-color: var(--color-red-600);
   }
   .bg-shape-red {
     background-color: var(--color-shape-red);
@@ -604,6 +567,18 @@
   .px-6 {
     padding-inline: calc(var(--spacing) * 6);
   }
+  .px-10 {
+    padding-inline: calc(var(--spacing) * 10);
+  }
+  .px-20 {
+    padding-inline: calc(var(--spacing) * 20);
+  }
+  .px-200 {
+    padding-inline: calc(var(--spacing) * 200);
+  }
+  .py-1 {
+    padding-block: calc(var(--spacing) * 1);
+  }
   .py-2 {
     padding-block: calc(var(--spacing) * 2);
   }
@@ -613,8 +588,14 @@
   .py-10 {
     padding-block: calc(var(--spacing) * 10);
   }
+  .py-15 {
+    padding-block: calc(var(--spacing) * 15);
+  }
   .py-50 {
     padding-block: calc(var(--spacing) * 50);
+  }
+  .py-300 {
+    padding-block: calc(var(--spacing) * 300);
   }
   .pt-30 {
     padding-top: calc(var(--spacing) * 30);
@@ -649,10 +630,6 @@
   .text-base {
     font-size: var(--text-base);
     line-height: var(--tw-leading, var(--text-base--line-height));
-  }
-  .text-sm {
-    font-size: var(--text-sm);
-    line-height: var(--tw-leading, var(--text-sm--line-height));
   }
   .text-xl {
     font-size: var(--text-xl);
@@ -705,15 +682,6 @@
   .text-\[\#00672e\] {
     color: #00672e;
   }
-  .text-\[2\] {
-    color: 2;
-  }
-  .text-\[24PX\] {
-    color: 24PX;
-  }
-  .text-\[24opx\] {
-    color: 24opx;
-  }
   .text-\[rgba\(0\,103\,46\,1\)\] {
     color: rgba(0,103,46,1);
   }
@@ -722,6 +690,12 @@
   }
   .text-primary {
     color: var(--color-primary);
+  }
+  .text-shape-green {
+    color: var(--color-shape-green);
+  }
+  .text-text-green {
+    color: var(--color-text-green);
   }
   .text-white {
     color: var(--color-white);
@@ -830,11 +804,6 @@
       width: 196px;
     }
   }
-  .max-xl\:w-\[396px\] {
-    @media (width < 80rem) {
-      width: 396px;
-    }
-  }
   .max-xl\:w-full {
     @media (width < 80rem) {
       width: 100%;
@@ -864,9 +833,24 @@
       row-gap: calc(var(--spacing) * 10);
     }
   }
+  .max-xl\:px-1 {
+    @media (width < 80rem) {
+      padding-inline: calc(var(--spacing) * 1);
+    }
+  }
   .max-xl\:px-15 {
     @media (width < 80rem) {
       padding-inline: calc(var(--spacing) * 15);
+    }
+  }
+  .max-xl\:px-20 {
+    @media (width < 80rem) {
+      padding-inline: calc(var(--spacing) * 20);
+    }
+  }
+  .max-xl\:px-25 {
+    @media (width < 80rem) {
+      padding-inline: calc(var(--spacing) * 25);
     }
   }
   .max-xl\:text-2xl {
@@ -1445,6 +1429,11 @@
     @media (width >= 80rem) {
       font-size: var(--text-3xl);
       line-height: var(--tw-leading, var(--text-3xl--line-height));
+    }
+  }
+  .xl\:text-\[48px\] {
+    @media (width >= 80rem) {
+      font-size: 48px;
     }
   }
   .\32 xl\:h-\[40vw\] {
