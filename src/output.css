@@ -682,6 +682,9 @@
   .text-primary {
     color: var(--color-primary);
   }
+  .text-shape-green {
+    color: var(--color-shape-green);
+  }
   .text-text-green {
     color: var(--color-text-green);
   }
