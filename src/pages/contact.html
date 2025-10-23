@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <link href="../output.css" rel="stylesheet">
   
   
     <title>Website project template</title>
@@ -22,7 +22,7 @@
      <div id="contact-middle"></div>
     <div id="footer" class="mt-20"></div>
       
-    <script defer src="./js/nav.js"></script>
+    <script defer src="../js/nav.js"></script>
     <script>
         const loadComponents = (id, url) =>  {
             return fetch(url)
@@ -34,13 +34,18 @@
 
         window.onload = async () => {
             // load navbar first so scripts can attach
-            await loadComponents('navbar', 'sections/commonNavbar.html');
+            await loadComponents('navbar', '../sections/commonNavbar.html');
             // init nav handlers that expect elements inside the injected navbar
             if (window.initNav) window.initNav();
 
             // load the rest (can be async)
+<<<<<<< HEAD:src/contact.html
             // loadComponents('contact-middle', 'sections/contact-middle.html');
             // loadComponents('footer', 'sections/contactFooter.html');
+=======
+            loadComponents('contact-middle', '../sections/contact-middle.html');
+            loadComponents('footer', '../sections/contactFooter.html');
+>>>>>>> 5574a0f0b94754f7e7c7afc4790aa0b11e892e49:src/pages/contact.html
             
         }
     </script>
