@@ -27,7 +27,19 @@
   }
 }
 
+
 @layer utilities {
+  /* Footer polygon hidden on tablets/phones ONLY on dataprivacy page */
+.page-dataprivacy .footer-polygon {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .page-dataprivacy .footer-polygon {
+    display: block;
+  }
+}
+
 
 
 
@@ -45,6 +57,8 @@
 
   .polygon-red {
     clip-path: polygon(9% 26%, 68% 21%, 97% 52%, 77% 82%, 17% 78%, 0 52%);
+    
+    
   }
 
   .hexagon {
