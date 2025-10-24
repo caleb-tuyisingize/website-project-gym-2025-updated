@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme{
+  --font-outfit: 'Outfit';
+  --color-text-green:#00672e;
+  --color-primary: #000000;
+  --color-bg-primary:#EFECEA;
+  --color-shape-green:#00672E;
+  --color-shape-yellow:#FFE800;
+  --color-shape-red:#E31C24;
+  --color-shape-pink:#FF93C8;
+  --color-shape-blue:#0F2CCE;
+}
+
+
+@layer base {
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+
+  }
+}
+
+
+@layer utilities {
+  /* Footer polygon hidden on tablets/phones ONLY on dataprivacy page */
+.page-dataprivacy .footer-polygon {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  .page-dataprivacy .footer-polygon {
+    display: block;
+  }
+}
+
+
+
+
+  .clip-green {
+    clip-path: polygon(10% 5%, 85% 0%, 100% 25%, 95% 100%, 15% 95%, 0% 30%);
+  }
+
+  .clip-test {
+    clip-path: polygon(43% 4%, 69% 0, 96% 18%, 97% 74%, 62% 98%, 25% 91%, 20% 24%);
+  }
+
+  .square-hexagon {
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 91%, 20% 91%, 0 90%);
+  }
+
+  .polygon-red {
+    clip-path: polygon(9% 26%, 68% 21%, 97% 52%, 77% 82%, 17% 78%, 0 52%);
+    
+    
+  }
+
+  .hexagon {
+    clip-path: polygon(4% 22%, 83% 11%, 100% 50%, 76% 78%, 24% 75%, 0 50%);
+  }
+  .close-polygon {
+    clip-path: polygon(4% 30%, 79% 26%, 100% 50%, 82% 76%, 15% 70%, 0% 50%);
+  }
+  .pink-shape{
+    clip-path:polygon(73% 2%, 100% 76%, 71% 100%, 41% 10%, 61% 0)
+  }
+  .yellow-shape{
+    clip-path:polygon(34% 3%, 84% 0, 97% 42%, 43% 100%, 0 98%, 0 83%, 3% 68%);
+  }
+  .red-shape{
+    clip-path:polygon(2% 5%, 71% 0, 100% 39%, 78% 70%, 26% 66%, 0 37%);
+  }
+  .green-shape{
+    clip-path:polygon(17% 0, 56% 9%, 96% 60%, 75% 97%, 33% 100%, 0 40%);
+  }
+  .blue-shape{
+    clip-path:polygon(49% 2%, 90% 0, 100% 40%, 80% 99%, 35% 99%, 0 60%, 33% 7%);
+  }
+  .green-hexagon{
+   clip-path:polygon(76% 0, 100% 26%, 100% 100%, 68% 100%, 36% 83%, 25% 46%, 40% 13%);
+  }
+  /* In your global.css or tailwind.css */
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+    /* Chrome, Safari */
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+  }
+
+}

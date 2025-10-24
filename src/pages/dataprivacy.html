@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../output.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class=" bg-bg-primary font-outfit">
+
+    
+
+    <div  id="navbar" class="sticky top-0 bg-transparent z-100 max-xl:mb-50"></div>
+    
+   
+     <div id="contact-middle"></div>
+    <div id="footer" class="mt-20"></div>
+      
+    <script defer src="../js/nav.js"></script>
+    <script>
+        const loadComponents = (id, url) =>  {
+            return fetch(url)
+            .then((response) => response.text())
+            .then((html) => {
+                document.getElementById(id).innerHTML = html;
+            });
+        }
+
+        window.onload = async () => {
+            // load navbar first so scripts can attach
+            await loadComponents('navbar', '../sections/commonNavbar.html');
+            // init nav handlers that expect elements inside the injected navbar
+            if (window.initNav) window.initNav();
+
+            // load the rest (can be async)
+            loadComponents('contact-middle', '../sections/dataprivacy.html');;
+            
+            
+        }
+    </script>
+
+     
+    </body>
+
+</html>
